@@ -58,7 +58,7 @@ raw zone table build
 
 -- todo: complete table build
 /*CREATE OR ALTER command can implement change without the need to drop and recreate. If no change then it won't do anything*/
-CREATE OR ALTER TABLE STAGING_tasty_bytes.raw_pos.country
+CREATE OR ALTER TABLE {{env}}_tasty_bytes.raw_pos.country
 (
    country_id NUMBER(18,0),
    country VARCHAR(16777216),
